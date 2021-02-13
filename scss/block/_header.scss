@@ -1,0 +1,121 @@
+.site-header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+.site-header__logo-link {
+  margin-right: 15px;
+}
+.site-header__logo {
+  display: block;
+  min-width: 170px;
+  height: 40px;
+}
+.site-header__nav {
+  margin-right: 15px;
+  max-width: 500px;
+  width: 100%;
+}
+.site-header__form {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+}
+.site-header__input {
+  border: none;
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+  &:focus {
+    background-color: #DFDFDF;
+    color: black;
+    &::placeholder {
+      color: black;
+    }
+  }
+  &::placeholder {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+.site-header__btn-form {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: black;
+  
+  background-image: url('../img/search-black.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+.site-header__link {
+  display: block;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  position: relative;
+  transition: 0.5s ease;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #DFDFDF;
+    transition: 0.5s linear;
+    color: black;
+  } 
+  &:hover {
+    color: black;
+  } 
+}
+.site-header__link:hover::after {
+  width: 100%;
+}
+.site-header__link-span{
+  white-space: nowrap; 
+  position: relative;
+  z-index: 50;
+}
+@media only screen and (max-width: 650px) {
+  .site-header__nav { 
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    z-index: 500;
+  }
+} 

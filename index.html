@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhtomaN</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    
+    <div class="container site-header__container">
+      <a class="site-header__logo-link" href="#">
+        <img class="site-header__logo" src="img/photoman.svg" alt="site logo" width="170" height="40">
+      </a>
+      
+      <nav class="site-header__nav">
+        <form class="site-header__form js-form" action="#" method="GET">
+          <input class="site-header__input js-input" type="text" placeholder="Search" required >
+          <button class="site-header__btn-form" type="submit" aria-label="search"></button>
+        </form>
+      </nav>
+      
+      <a class="site-header__link" href="#"><span class="site-header__link-span">go to videos</span></a>
+    </div>
+    
+  </header>
+  
+  <main class="site-main">
+    <section class="intro">
+      <video  class="intro__video" autoplay="" loop="" muted="" height="650" poster="https://www.pexels.com/assets/videos/free-videos-7daa2ef41a140f70c757ce91913a4ecb90570b7d7cd2b401bae868350e02c83a.jpg">
+        <source src="https://static.pexels.com/lib/videos/free-videos.mp4" type="video/mp4">
+          <source src="https://static.pexels.com/lib/videos/free-videos.webm" type="video/webm">
+          </video>
+          
+          <div class="container intro__container">
+            <div class="intro__inner-wrapper">
+              <p class="intro__text">LAST MONTH’S FEATURED STORY</p>
+              <h2 class="intro__title">HAZY FULL MOON OF APPALACHIA</h2>
+              <div class="intro__inner">
+                <time class="itro__text" datetime="13-02-2021">March 2nd 2020</time>
+                <span class="intro__by">by Abduqodir at-Toshkandiy</span>
+              </div>
+              <p class="intro__text">The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountain" especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
+              
+              <a class="intro__link" href="#" target="balnk">About Me</a>
+            </div>
+          </div>
+        </section>
+        
+        <section class="content">
+          <ul class="content__list js-content-list"></ul>
+          <a class="content__btn js-more-btn" href="#"> <span class="content__btn-span"> load more</span></a>
+        </section>
+        
+      </main>
+      
+
+      <template class="card-template">
+        <li class="content__item js-card-item">
+          <a class="content__link js-card-link" href="#">
+            <img class="content__img js-card-img" src="" alt="img" width="360" height="500">
+          </a>
+          
+          <div class="content__inner">
+            <time class="content__text js-card-time" datetime="10-02-2020">April 16th 2020</time>
+            <h3 class="content__title js-card-desc">The Mountains</h3>
+            <p class="content__text js-card-owner">by John Appleseed</p>
+            <span class="content__inner-link">more see</span>
+          </div>
+        </li>
+      </template>
+      <script src="main.js"></script>
+    </body>
+    </html>
