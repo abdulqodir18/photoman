@@ -49,6 +49,18 @@ function displayCard (arr){
 }
 
 let count = 1
+
+  fetch(`https://api.unsplash.com/search/photos?page=${count}&per_page=12&order_by=popular&query=islam&client_id=Lhzh7VdA_qlNPmVhNJG15Z-kP_tsUcr-Ja_meCTWHKY`)
+  .then(response => {
+    if(response.status === 200) {
+      return response.json()
+    }
+  }).then(data => {
+    if(data.total > 0) {
+      displayCard(data.results);
+    }
+  })
+
 elFrorm.addEventListener(`submit`, evt => {
   evt.preventDefault()
   

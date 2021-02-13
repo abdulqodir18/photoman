@@ -369,7 +369,7 @@ body {
   line-height: 1.5;
   background-color: white;
   overflow-x: hidden;
-  margin-top: 190px;
+  margin-top: 70px;
 }
 
 img {
@@ -390,6 +390,10 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 500;
 }
 
 .site-header__container {
@@ -766,6 +770,9 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__inner-link {
@@ -848,5 +855,13 @@ img {
   white-space: nowrap;
   position: relative;
   z-index: 50;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content__inner {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

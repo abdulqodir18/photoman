@@ -3,6 +3,9 @@
   position: fixed;
   width: 100%;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
 }
 .site-header__container {
   display: flex;
